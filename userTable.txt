@@ -1,0 +1,25 @@
+-- Adminer 4.8.0 MySQL 5.5.5-10.4.17-MariaDB dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(45) NOT NULL,
+  `last_name` varchar(45) NOT NULL,
+  `phone` varchar(45) NOT NULL,
+  `email` varchar(45) NOT NULL,
+  `comments` text NOT NULL,
+  `status` varchar(45) NOT NULL DEFAULT 'active',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `user` (`id`, `first_name`, `last_name`, `phone`, `email`, `comments`, `status`) VALUES
+(11,	'Jay',	'Patel',	'99999999',	'jay@example.com',	'Jay Patel the first user',	'active');
+
+-- 2021-08-18 15:54:05
