@@ -9,11 +9,15 @@ Steps:
  
  (3) npm install
  
- (4) make .env with keys:
+ (4) make database in mySql (ex. node_basic)
+ 
+ (5) Copy and paste db.txt file into SQL
+ 
+ (6) make .env with keys:
       DB_HOST = xxxxxxx
-      DB_NAME = mode_yt
+      DB_NAME = node_basic
       DB_USER = xxxx
       DB_PASS = xxxx
       
- (5) npm start
+ (7) npm start
      
