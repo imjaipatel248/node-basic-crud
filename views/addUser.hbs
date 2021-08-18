@@ -1,0 +1,16 @@
+
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Add User</a></li>
+  </ol>
+</nav>
+{{#if success}}
+<div class="alert alert-primary" role="alert">
+ {{success}}
+</div>
+{{/if}}
+<form action="/addUser" method="post">
+{{> user-form}}
+</form>
